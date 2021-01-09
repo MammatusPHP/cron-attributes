@@ -12,11 +12,11 @@ final class Cron
     private float $ttl;
     private string $schedule;
 
-    public function __construct(string $name, float $ttl, string $schedule)
+    public function __construct(array $data)
     {
-        $this->name = $name;
-        $this->ttl = $ttl;
-        $this->schedule = $schedule;
+        $this->name = $data['name'];
+        $this->ttl = $data['ttl'];
+        $this->schedule = $data['schedule'];
     }
 
     public function name(): string
