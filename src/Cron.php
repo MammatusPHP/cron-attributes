@@ -29,11 +29,8 @@ final class Cron
         return $this->ttl;
     }
 
-    /**
-     * @return iterable<string>
-     */
-    public function schedules(): iterable
+    public function schedule(): string
     {
-        yield from $this->schedules;
+        return $this->schedule;
     }
 }
