@@ -10,18 +10,13 @@ final class Cron
 {
     private string $name;
     private float $ttl;
+    private string $schedule;
 
-    /** @var array<string> */
-    private array $schedules;
-
-    /**
-     * @param string[] $schedules
-     */
-    public function __construct(string $name, float $ttl, string ...$schedules)
+    public function __construct(string $name, float $ttl, string $schedule)
     {
         $this->name = $name;
         $this->ttl = $ttl;
-        $this->schedules = $schedules;
+        $this->schedule = $schedule;
     }
 
     public function name(): string
