@@ -9,6 +9,7 @@ namespace Mammatus\Cron\Attributes;
 final class Cron
 {
     private string $name;
+    private float $ttl;
 
     /** @var array<string> */
     private array $schedules;
@@ -16,15 +17,21 @@ final class Cron
     /**
      * @param string[] $schedules
      */
-    public function __construct(string $name, string ...$schedules)
+    public function __construct(string $name, float $ttl, string ...$schedules)
     {
         $this->name = $name;
+        $this->ttl = $ttl;
         $this->schedules = $schedules;
     }
 
     public function name(): string
     {
         return $this->name;
+    }
+
+    public function ttl(): float
+    {
+        return $this->ttl;
     }
 
     /**
