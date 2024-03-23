@@ -1,36 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Mammatus\Cron\Attributes;
 
-/**
- * @Annotation
- * @Target({"CLASS"})
- */
-final class Cron
+use Attribute;
+
+#[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
+final readonly class Cron
 {
-    private string $name;
-    private float $ttl;
-    private string $schedule;
-
-    public function __construct(array $data)
-    {
-        $this->name = $data['name'];
-        $this->ttl = $data['ttl'];
-        $this->schedule = $data['schedule'];
-    }
-
-    public function name(): string
-    {
-        return $this->name;
-    }
-
-    public function ttl(): float
-    {
-        return $this->ttl;
-    }
-
-    public function schedule(): string
-    {
-        return $this->schedule;
+    public function __construct(
+        public string $name,
+        public float $ttl,
+        public string $schedule,
+    ) {
     }
 }

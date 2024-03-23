@@ -1,4 +1,3 @@
-build
-vendor
-.env
-/src/Generated/
+var/
+vendor/
+etc/qa/.phpunit.result.cache
