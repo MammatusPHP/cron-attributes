@@ -21,7 +21,7 @@ See the [cron](https://github.com/MammatusPHP/cron) package on usage.
 
 The MIT License (MIT)
 
-Copyright (c) 2024 Cees-Jan Kiewiet
+Copyright (c) 2025 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
