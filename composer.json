@@ -15,6 +15,11 @@
       "Mammatus\\Cron\\Attributes\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Mammatus\\Tests\\Cron\\Attributes\\": "tests/"
+    }
+  },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
