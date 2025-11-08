@@ -7,7 +7,7 @@
     "mammatus/kubernetes-contracts": "^1"
   },
   "require-dev": {
-    "wyrihaximus/makefiles": "^0.5.0",
+    "wyrihaximus/makefiles": "^0.7.11",
     "wyrihaximus/test-utilities": "^8.5.0"
   },
   "autoload": {
