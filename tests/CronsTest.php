@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Mammatus\Tests\Cron\Attributes;
 
 use Mammatus\Cron\Attributes\Cron;
@@ -10,7 +12,7 @@ use WyriHaximus\TestUtilities\TestCase;
 final class CronsTest extends TestCase
 {
     #[Test]
-    public function sharedAddOns()
+    public function sharedAddOns(): void
     {
         $addonA = new StubAddOn();
         $addonB = new StubAddOn();
