@@ -10,6 +10,7 @@ use Mammatus\Kubernetes\Contracts\AddOn;
 use function array_filter;
 use function array_map;
 
+/** @api */
 #[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 final readonly class Crons
 {

@@ -8,5 +8,4 @@ use Mammatus\Kubernetes\Contracts\AddOn;
 
 final readonly class StubAddOn implements AddOn
 {
-
 }

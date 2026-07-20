@@ -1,9 +1,12 @@
 parameters:
 	level: max
+	paths:
+		- ../../etc
+		- ../../src
+		- ../../tests
 	ergebnis:
 		noExtends:
 			classesAllowedToBeExtended:
-			    - WyriHaximus\React\Mutex\AbstractMutexTestCase
+			- Mammatus\LifeCycleEvents\Promise\AbstractPromise
+			- Mammatus\Tests\LifeCycleEvents\Promise\AbstractPromiseTest
 
-includes:
-	- ../../vendor/wyrihaximus/test-utilities/rules.neon
