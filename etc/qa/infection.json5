@@ -46,5 +46,6 @@
                 "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::cannotReleaseLockWithWrongRng"
             ]
         }
-    }
+    },
+    "threads": 64
 }
