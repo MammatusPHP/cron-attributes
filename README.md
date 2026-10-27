@@ -1,6 +1,5 @@
 # Attributes for the cron manager
 
-[![Continuous Integration](https://github.com/MammatusPHP/cron-attributes/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/MammatusPHP/cron-attributes/actions/workflows/ci.yml)
 [![Latest Stable Version](https://poser.pugx.org/mammatus/cron-attributes/v/stable.png)](https://packagist.org/packages/mammatus/cron-attributes)
 [![Total Downloads](https://poser.pugx.org/mammatus/cron-attributes/downloads.png)](https://packagist.org/packages/mammatus/cron-attributes)
 [![License](https://poser.pugx.org/mammatus/cron-attributes/license.png)](https://packagist.org/packages/mammatus/cron-attributes)
